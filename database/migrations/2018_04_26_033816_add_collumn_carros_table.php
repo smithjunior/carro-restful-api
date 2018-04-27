@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMarcasTable extends Migration
+class AddCollumnCarrosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,8 @@ class CreateMarcasTable extends Migration
     public function up()
     {
         Schema::table('carro', function (Blueprint $table) {
-            $table->boolean('vendido');
-            $table->text("descricao");
+            $table->boolean("vendido")->default('0');
+            $table->text("descricao")->nullable(true);
         });
     }
 

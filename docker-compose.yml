@@ -9,7 +9,7 @@ services:
         - ./:/app
     environment:
         DB_HOST: mariadb
-        DB_DATABASE: test_estadao
+        DB_DATABASE: carros_db
         DB_USERNAME: username
         DB_PASSWORD: p455w0rd
         DB_CONNECTION: mysql
@@ -22,7 +22,7 @@ services:
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - MARIADB_USER=username
-      - MARIADB_DATABASE=test_estadao
+      - MARIADB_DATABASE=carros_db
       - MARIADB_PASSWORD=p455w0rd
     ports:
       - 33061:3306

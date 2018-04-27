@@ -4,9 +4,6 @@ docker-compose up -d
 echo "Copying the configuration example file"
 docker exec -it web_container cp .env.example .env
 
-echo "Install dependencies"
-docker exec -it web_container composer install
-
 echo "Generate key"
 docker exec -it web_container php artisan key:generate
 
