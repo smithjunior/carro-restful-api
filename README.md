@@ -4,6 +4,7 @@ Para rodar a aplicação é nécessario do gerenciador de containers.
 
   - docker
   - docker-composer
+  - Composer-php
 
 # New Features!
 
@@ -16,6 +17,7 @@ Esse microservice é nécessario para rodar o front end project!
 
 ```sh
 $ cd backend-php
+$ composer install
 $ run.sh or run.bat
 ```
 
