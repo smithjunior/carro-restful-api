@@ -14,6 +14,8 @@ class Carro extends Model
         'ano',
         'modelo',
         'marca_id',
+        'vendido',
+        'descricao'
     ];
 
 
